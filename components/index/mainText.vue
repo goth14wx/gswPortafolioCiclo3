@@ -4,6 +4,7 @@
   <span tyle="font-size:50px" class="word">PORTAFOLIO</span>
   <span tyle="font-size:50px" class="word">GSW</span>
   <span tyle="font-size:50px" class="word">2019</span>
+  <span tyle="font-size:50px" class="word">CICLO #3</span>
 </h1>
     </div>
 </template>

@@ -63,7 +63,7 @@
       >
         <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
       </v-btn>
-      &nbsp&nbsp
+      &nbsp;&nbsp;
       <v-toolbar-title class="font-poiret-one "> <nuxt-link style="text-decoration:none !important; color:white;" :to="{path:'/'}">{{title}}</nuxt-link> </v-toolbar-title>
       <v-spacer />
     </v-app-bar>
@@ -103,39 +103,39 @@ export default {
       fixed: false,
       drawerItems:[
         {
-          title:"XAMPP",
+          title:"Despliegue",
           icon:"./drawerIcons/XAMPP-icon.png",
           items: [
         {
-          icon: 'desktop_windows',
-          title: 'Preparando Todo',
-          to: '/linux/setup'
+          icon: 'announcement',
+          title: 'Explicacion',
+          to: '/explicaciones/explicacion'
         },
         {
-          icon: 'http',
-          title: 'Instalando Apache',
-          to: '/linux/apache'
+          icon: 'compare_arrows',
+          title: 'Alternativas',
+          to: '/explicaciones/alternativas'
         },
         {
-          icon: 'storage',
-          title: 'Instalando Mysql',
-          to: '/linux/mysql'
+          icon: 'wb_cloudy',
+          title: 'Heroku',
+          to: '/alternativas/heroku'
         },
         {
-          icon: 'dns',
-          title: 'Instalando PHP',
-          to: '/linux/php'
+          icon: 'cloud_circle',
+          title: 'Netlify',
+          to: '/alternativas/netlify'
         },
         
         {
-          icon: 'cloud_done',
-          title: 'Virtualhost',
-          to: '/linux/virtualhost'
+          icon: 'cloud_queue',
+          title: 'Github Pages',
+          to: '/alternativas/github'
         }
       ],
         },
         {
-          title:"WINDOWS",
+          title:"Docker",
           icon:"./drawerIcons/WINDOWS-icon.png",
           items: [
         {

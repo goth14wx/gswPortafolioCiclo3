@@ -1,5 +1,5 @@
 <template>
-  <v-row justify="center">
+  <v-row justify="center" align="center">
     <v-btn
       color="primary"
       dark
@@ -12,13 +12,17 @@
 
     <v-dialog
       v-model="dialog"
-      max-width="560"
-      max-height="315"
+       hide-overlay
     >
-      <v-card>
- <iframe width="560" height="315" :src="videoSrc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <v-carousel color='transparent'>
+ <githubimgs v-if="videoSrc=='github'"></githubimgs>
+
+ <v-card  v-if="videoSrc=='heroku'" class="text-center" color="orange">
+<iframe width="1300px" height="500px" src="https://www.youtube.com/embed/aR3wjq2QDG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       </v-card>
+
+  </v-carousel>
     </v-dialog>
   </v-row>
 </template>
@@ -26,15 +30,25 @@
   
 
   <script>
-  
+  import githubimgs from '@/components/shared/imagesComponent/githubimgs';
   export default {
     props:['video'],
     data () {
       return {
         dialog: false,
         addClass:true,
-        videoSrc: this.video ? this.video : 'https://www.youtube.com/embed/RvKoq2ckAFE'
+        videoSrc: this.video ? this.video : 'https://www.youtube.com/embed/RvKoq2ckAFE',
+        colors: [
+          'primary',
+          'secondary',
+          'yellow darken-2',
+          'red',
+          'orange',
+        ],
       }
+    },
+    components:{
+      githubimgs
     },
     mounted(){
         setInterval(() => {

@@ -86,41 +86,6 @@
   }
 
 
-  @-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-    }
-}
 
 @media (max-width: 600px) {
   .ml11{
@@ -137,4 +102,25 @@
 .ml2 .lettercard {
   display: inline-block;
   line-height: 1em;
+}
+
+.wiretrap{
+  background: linear-gradient(-45deg, #f12711, #f12711, #f5af19);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+
+
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

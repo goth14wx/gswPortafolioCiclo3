@@ -1,7 +1,8 @@
 <template>
     <div class="text-center">
-      <h1 class="ml16 font-barlow yellow--text">Instalacion de LAMPP Y IIS</h1>
+      <h1 class="ml16 font-barlow yellow--text">DESPLIGUE DE APPS EN PLATAFORMAS COMO SERVICIO</h1>
     </div>
+    
 </template>
 
 <script>
