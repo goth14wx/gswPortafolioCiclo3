@@ -135,13 +135,18 @@ export default {
       ],
         },
         {
-          title:"Docker",
+          title:"Azure y Docker",
           icon:"./drawerIcons/WINDOWS-icon.png",
           items: [
         {
-          icon: 'laptop_windows',
-          title: 'Preparando Todo',
-          to: '/windows/setup'
+          icon: 'cloud_off',
+          title: 'Azure',
+          to: '/azure'
+        },
+         {
+          icon: 'dock',
+          title: 'Docker',
+          to: '/docker'
         }
         
       ],
